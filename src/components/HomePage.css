@@ -1,0 +1,9 @@
+.carousel-item {
+  height: 30vh;
+  align-content: center;
+}
+
+.music-player {
+  height: 7rem;
+  margin-bottom: 15px;
+}

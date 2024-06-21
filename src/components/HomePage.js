@@ -1,20 +1,51 @@
+import "./HomePage.css";
+import musicPalyer from "../images/MusicOfTheMonth.png";
+
 const HomePage = () => {
   return (
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
-        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-          .col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex flex-column justify-content-center  align-items-center">
+            <img src={musicPalyer} class="music-player" />
+            <h3>Posłuchaj piosenki wybranej w marcu</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <img src={musicPalyer} class="music-player" />
+            <h3>Posłuchaj piosenki wybranej w kwietniu</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <img src={musicPalyer} class="music-player" />
+            <h3>Posłuchaj piosenki wybranej w maju</h3>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-5 col-lg-6">
-          .col-sm-6 .col-md-5 .col-lg-6
-        </div>
-        <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
-          .col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0
-        </div>
-      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   );
 };

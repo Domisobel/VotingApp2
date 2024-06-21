@@ -1,5 +1,21 @@
+:root {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+.navbar-brand img {
+  height: 4rem;
+}
+.nav-link {
+  color: #faecff;
+}
+.navbar-nav .nav-link.active {
+  color: #faecff;
+  font-weight: 600;
+}
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
+  }
+  .navbar-expand-lg .navbar-nav {
+    align-items: center;
   }
 }
