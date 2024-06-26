@@ -18,13 +18,13 @@
   .btn-width {
     width: 14rem;
   }
-  .btn-width:hover {
-    border: 2px solid #3dbb87;
-  }
+ 
   .delete-account {
     cursor: pointer;
     color: #ec9898;
   }
+
+
 
   @media (max-width: 575px) {
     .btn-width {
@@ -32,10 +32,10 @@
       width: 12rem;
       white-space: nowrap;
     }
-    .user-name {
+    .user-name, .votes-heading, .settings-heading {
       font-size: 1.5rem;
     }
-    .user-data {
+    .user-data{
       font-size: 1rem;
     }
     .second-column {
@@ -43,7 +43,7 @@
     }
   }
   @media (min-width:576px) {
-    .user-name {
+    .user-name, .votes-heading, .settings-heading {
       font-size: 1.6rem;
     }
     .user-data {
@@ -54,7 +54,7 @@
     }
   }
   @media (min-width: 768px) {
-    .user-data, .newsletter-form, .delete-account {
+    .user-data, .newsletter-form, .delete-account  {
       margin-left: 2.5rem;
     }
   }
