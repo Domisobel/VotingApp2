@@ -8,7 +8,7 @@ const Footer = () => {
         // style="background-color: #1c2331"
       >
         <section
-          className="d-flex justify-content-center p-4 mb-2 newsletter"
+          className="d-flex justify-content-xxl-center p-4 mb-2 newsletter"
           //   style="background-color: #6351ce"
         >
           <div className="me-5">
@@ -94,10 +94,8 @@ const Footer = () => {
 
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <h6 className="text-uppercase fw-bold">Kontakt</h6>
-                <hr
-                  className="mb-4 mt-0 d-inline-block mx-auto"
-                  //   style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
+                <hr className="mb-4 mt-0 d-inline-block mx-auto" />
+                <br />
                 <a href="" className="text-white me-4">
                   <i className="fab fa-facebook-f"></i>
                 </a>
