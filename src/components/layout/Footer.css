@@ -7,6 +7,10 @@ hr {
 .newsletter {
   background-color: #17023f;
 }
+
+.d-flex {
+  align-items: center;
+}
 .main-footer-box {
   background: url("../../images/FooterBackground.png");
   background-size: cover;

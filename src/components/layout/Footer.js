@@ -8,15 +8,14 @@ const Footer = () => {
         // style="background-color: #1c2331"
       >
         <section
-          className="d-flex justify-content-xxl-center p-4 mb-2 newsletter"
+          className="d-flex justify-content-center p-4 mb-2 newsletter"
           //   style="background-color: #6351ce"
         >
-          <div className="me-5">
-            <span>
-              Zapisz się do newslettera aby zawsze być na bieżąco z wynikami
-              głosowania!
-            </span>
-          </div>
+          <span>
+            Zapisz się do newslettera aby zawsze być na bieżąco z wynikami
+            głosowania!
+          </span>
+
           <div>
             {" "}
             <input />
