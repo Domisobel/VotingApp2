@@ -1,0 +1,123 @@
+{{#> 
+	layouts/main 
+	title="File Manager" 
+	pagename="miscellaneous_filemanager" 
+	heading="<i class='subheader-icon fal fa-folder'></i>  File Manager (beta)" 
+	pagedescription="This is a beta version of a simple file manager (still a work in progress)"
+	category_1="Page Views"
+}}
+
+{{#*inline "head-block"}}
+	<!-- Optional: page related CSS-->
+	<link rel="stylesheet" media="screen, print" href="css/fa-solid.css">
+	<link rel="stylesheet" media="screen, print" href="css/miscellaneous/filemanager/filemanager.css">
+{{/inline}}
+
+{{#*inline "content-block"}}
+
+<div class="card">
+	<div class="card-body">
+
+		<div class="cm-address-bar-search clear">
+			<div class="address-search pl-0">
+				<div class="overflow-hidden position-relative">
+
+					<div class="input-group input-group-lg">
+						<input id="basic-addon2" type="text" class="form-control form-control-lg address-search-input" placeholder="Folder Name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+						<div class="input-group-append">
+							<span class="input-group-text">
+								<i class="fas fa-arrow-right"></i>
+								<div class="address-short-btn bg-white"></div>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="search-file-and-folder pr-0">
+				<div class="overflow-hidden position-relative">
+
+					<div class="input-group bg-white shadow-inset-2">
+						<input type="text" class="form-control form-control-lg border-right-0 bg-transparent pr-0 files-search-input" placeholder="Search...">
+						<div class="input-group-append">
+							<span class="input-group-text bg-transparent border-left-0 cm-button file-search-button">
+								<i class="fal fa-search"></i>
+							</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="filemanager-structure big-file-manager large text-white bg-info-400">
+			<ul>
+				<li class="file-sub-active show-up"><b>Project 01</b></li>
+				<li data-file-icon="folder"><b>Assets</b>
+					<ul>
+						<li data-file-icon="folder"><b>image</b>
+							<ul>
+								<li data-file-id="111" data-file-icon="video"><b>movie.mp4</b></li>
+								<li data-file-id="112" data-file-icon="image"><b>cat.png</b></li>
+								<li data-file-id="113" data-file-icon="image"><b>banner.jpg</b></li>
+								<li data-file-id="114" data-file-icon="image"><b>user.gif</b></li>
+							</ul>
+						</li>
+						<li data-file-icon="folder"><b>fonts</b>
+							<ul>
+								<li data-file-icon="folder"><b>A-1</b></li>
+								<li data-file-icon="folder"><b>B-1</b></li>
+								<li data-file-icon="folder"><b>C-1</b>
+									<ul>
+										<li data-file-icon="folder"><b>A-2</b></li>
+										<li data-file-icon="folder"><b>B-2</b></li>
+										<li data-file-icon="folder"><b>C-2</b>
+											<ul>
+												<li data-file-icon="folder"><b>A-3</b></li>
+												<li data-file-icon="folder"><b>B-3</b></li>
+												<li data-file-icon="folder"><b>C-3</b></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li data-file-icon="folder"><b>files</b></li>
+						<li data-file-icon="folder"><b>random</b></li>
+					</ul>
+				</li>
+				<li data-file-icon="folder"><b>Pages</b>
+					<ul>
+						<li data-file-id="5" data-file-icon="html"><b>main.html</b></li>
+						<li data-file-id="6" data-file-icon="php"><b>error.php</b></li>
+						<li data-file-id="7" data-file-icon="css"><b>serach-result.css</b></li>
+						<li data-file-id="8" data-file-icon="js"><b>extra.js</b></li>
+					</ul>
+				</li>
+				<li data-file-icon="folder"><b>Layout</b>
+					<ul>
+						<li data-file-icon="layout"><b>Two Column Left Image</b></li>
+						<li data-file-icon="layout"><b>Three Column Equal</b></li>
+						<li data-file-icon="layout"><b>Two Column</b></li>
+						<li data-file-icon="layout"><b>Full Width</b></li>
+					</ul>
+				</li>
+				<li data-file-icon="folder"><b>File 04</b></li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+{{/inline}}
+
+{{#*inline "scripts-block"}}
+<script src="js/miscellaneous/filemanager/filemanager.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+<script>
+	$(document).ready(function () {
+		
+	});
+</script>
+{{/inline}}
+
+{{/layouts/main}}
