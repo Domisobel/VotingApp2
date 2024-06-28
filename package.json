@@ -15,6 +15,7 @@
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1",
+    "smartadmin": "^1.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -42,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "gulp": "^5.0.0",
     "react-router-dom": "^6.23.1"
   }
 }
