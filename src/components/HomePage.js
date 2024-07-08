@@ -8,7 +8,7 @@ const HomePage = () => {
       <section id="hero" class="container-fluid">
         <div id="hero-text">
           <img src={Logo} className="hero-logo" />
-          <p>Głosuj na ulubione utwory co tydzień i co miesiąc</p>
+          <h4>Głosuj na ulubione utwory co tydzień i co miesiąc</h4>
           <button className="btn-cyan">Zacznij głosować już teraz!</button>
         </div>
       </section>

@@ -6,6 +6,7 @@ import HomePage from "./components/HomePage";
 import UserPanel from "./components/UserPanel";
 import LoginPage from "./components/LoginPage";
 import AdministratorPanel from "./components/AdministratorPanel";
+import VotingMonth from "./components/MonthVotingList";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="settings" element={<UserPanel />} />
           <Route path="admin" element={<AdministratorPanel />} /> 
           <Route path="login" element={<LoginPage />} />
+          <Route path="voting" element={<VotingMonth />} />
           {/* Must be always last route */}
           <Route path="*" element={<>404 page not found</>} />
         </Route>

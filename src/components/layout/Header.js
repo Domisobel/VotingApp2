@@ -3,7 +3,7 @@ import logo from "../../images/HeaderLogo.png";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
       <div className="container-fluid ">
         <a className="navbar-brand" href="#">
           <img src={logo} id="HeaderLogo" alt="Voting App Logo" />
